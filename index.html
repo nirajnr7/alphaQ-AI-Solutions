@@ -3,20 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlphaQ AI Solutions</title>
+    <title>AlphaQ AI Solutions | Advanced Backend Architecture</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
-        .container { text-align: center; background: white; padding: 50px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 600px; }
-        h1 { color: #1a1a1a; margin-bottom: 10px; font-size: 2.5rem; }
-        p { color: #666; font-size: 1.1rem; line-height: 1.6; }
-        .tag { display: inline-block; background: #e3faf2; color: #0ca678; padding: 6px 16px; border-radius: 20px; font-weight: bold; font-size: 0.9rem; margin-bottom: 20px; }
+        :root { --primary: #1a1a1a; --accent: #0ca678; --bg: #f8f9fa; --text: #333; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 0; line-height: 1.6; }
+        header { background: white; padding: 30px 10%; border-bottom: 1px solid #e9ecef; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; font-size: 1.5rem; color: var(--primary); }
+        .tag { background: #e3faf2; color: var(--accent); padding: 5px 15px; border-radius: 20px; font-weight: 700; font-size: 0.85rem; }
+        .hero { padding: 80px 10%; text-align: center; max-width: 800px; margin: 0 auto; }
+        .hero h1 { font-size: 3rem; color: var(--primary); margin-bottom: 20px; font-weight: 800; letter-spacing: -1px; }
+        .hero p { font-size: 1.25rem; color: #666; margin-bottom: 40px; }
+        .section { padding: 60px 10%; background: white; margin: 20px 0; border-top: 1px solid #e9ecef; border-bottom: 1px solid #e9ecef; }
+        .section h2 { font-size: 1.8rem; color: var(--primary); margin-bottom: 30px; font-weight: 700; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: var(--bg); padding: 30px; border-radius: 8px; border: 1px solid #e9ecef; }
+        .card h3 { margin-top: 0; color: var(--primary); font-size: 1.2rem; }
+        .tech-stack span { display: inline-block; background: #e9ecef; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem; margin: 4px; font-weight: 600; }
+        footer { text-align: center; padding: 4px 0; color: #999; font-size: 0.9rem; }
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <header>
+        <div class="logo">AlphaQ AI Solutions</div>
         <div class="tag">Pre-Seed Venture Lab</div>
-        <h1>AlphaQ AI Solutions</h1>
-        <p>We are engineering custom backend workflows, building intelligent API systems, and optimizing foundational software environments to accelerate digital operations.</p>
-    </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Orchestrating High-Performance Backend Infrastructure</h1>
+            <p>We are engineering resilient API systems, optimizing concurrent processing environments, and building intelligent data extraction layers to power the next generation of enterprise automation.</p>
+        </section>
+
+        <section class="section">
+            <h2>Core Architectural Focus Areas</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>High-Throughput API Orchestration</h3>
+                    <p>Designing decoupled microservices patterns utilizing event-driven architectures to minimize processing latency, eliminate system bottlenecks, and scale operations fluidly.</p>
+                </div>
+                <div class="card">
+                    <h3>Intelligent Workflow Automation</h3>
+                    <p>Integrating foundational LLM structural inference with existing transaction engines to parse, sanitize, and validate heavy unstructured operational datasets seamlessly.</p>
+                </div>
+                <div class="card">
+                    <h3>Concurrent System Optimization</h3>
+                    <p>Building specialized thread pool management configurations and in-memory transactional caching mechanisms to handle high-volume distributed requests reliably.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--bg); border: none;">
+            <h2>The Technical Framework</h2>
+            <div class="grid">
+                <div class="card" style="background: white;">
+                    <h3>Enterprise Backend Core</h3>
+                    <div class="tech-stack">
+                        <span>Java Architecture</span>
+                        <span>Spring Ecosystem</span>
+                        <span>Asynchronous Streams</span>
+                        <span>Robust Concurrency Controllers</span>
+                    </div>
+                </div>
+                <div class="card" style="background: white;">
+                    <h3>Data Persistence & Caching</h3>
+                    <div class="tech-stack">
+                        <span>Relational Databases</span>
+                        <span>NoSQL Document Stores</span>
+                        <span>In-Memory Caching Layers</span>
+                        <span>Optimized Search Indices</span>
+                    </div>
+                </div>
+                <div class="card" style="background: white;">
+                    <h3>AI System Interaction</h3>
+                    <div class="tech-stack">
+                        <span>Claude API Integrations</span>
+                        <span>Intelligent Prompt Pipelines</span>
+                        <span>Structural JSON Output Control</span>
+                        <span>Context-Window Management</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Our Integration Roadmap</h2>
+            <div class="grid" style="grid-template-columns: 1fr;">
+                <p><strong>Phase 1: Foundation (Current)</strong> — Establishing secure core hosting infrastructure, custom domain validation pipelines, and initial distributed communications configurations.</p>
+                <p><strong>Phase 2: LLM Evaluation Gateway</strong> — Implementing native Claude API abstractions to test dynamic runtime contextual analysis, data stream structural transforms, and system exception analytics.</p>
+                <p><strong>Phase 3: Operational Scaling</strong> — Finalizing custom SDK wrapper integrations, refining parallel execution performance metrics, and stress-testing under simulated production volume limits.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AlphaQ AI Solutions. All corporate rights reserved.</p>
+    </footer>
+
 </body>
 </html>
